@@ -1,0 +1,31 @@
+*{
+    font-family: 'Roboto', Arial, sans-serif;
+    color:white;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:green;
+    color: white;
+    border: none;
+  }
+  
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+  p{    
+    text-align: justify;
+  }

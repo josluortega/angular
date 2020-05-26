@@ -1,0 +1,21 @@
+<p>Detalles de juegos</p>
+
+<div *ngIf = "product">
+    
+        
+        <h1>{{product.nombre}}</h1>
+        <img class="products" src="{{product.imagen}}" width="500">
+         <h1>Descripcion del producto</h1>
+        <p>{{product.description}}<br></p>
+        <h1>Plataforma</h1>
+        {{product.plataformas}}<br>
+        <h1>Precio</h1>
+        {{product.precio | currency}}<br>        
+        <h1>Requerimientos</h1>
+        {{product.requisitos}} <br><br><br>
+        
+        <button (click)="addToCart(product)"> Comprar </button><br>
+    
+    
+
+</div>
