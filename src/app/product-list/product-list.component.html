@@ -1,0 +1,8 @@
+<p>Lista de juegos GamePassXbox</p>
+<div *ngFor="let product of products; index as productId">
+    <h2>
+     {{product.nombre}}
+ </h2>
+ <p><a [title]="product.nombre" [routerLink]="['/products',productId]">
+    <img class="products" src="{{product.imagen}}" width="400"></a></p>
+ </div>
